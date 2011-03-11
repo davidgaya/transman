@@ -1,0 +1,24 @@
+<p class="notice"><%= notice %></p>
+<p>
+  <b>Name:</b>
+  <%= task.name %>
+</p>
+ 
+<p>
+  <b>Duration:</b>
+  <%= task.duration %>
+</p>
+<p>
+  <b>Date to start:</b>
+  <%= task.start %>
+</p>
+<p>
+  <b>Duration:</b>
+  <%= task.process %> %
+</p>
+
+<p>
+  <%= link_to 'Destroy Task', [task.project, task],
+               :confirm => 'Are you sure?',
+               :method => :delete %>
+</p>

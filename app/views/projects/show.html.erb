@@ -1,0 +1,21 @@
+<p class="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @project.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @project.description %>
+</p>
+
+<h2>Tasks</h2>
+<%= render :partial => "tasks/task",
+           :collection => @project.tasks %>
+ 
+<h2>Add a task:</h2>
+<%= render "tasks/form" %>
+
+<%= link_to 'Edit Project', edit_project_path(@project) %> |
+<%= link_to 'Back to Projects', projects_path %>

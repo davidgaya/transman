@@ -2,6 +2,14 @@
 
 one:
   name: MyString
+  duration: MyString
+  start: 2011-03-10
+  process: 1
+  project: 
 
 two:
   name: MyString
+  duration: MyString
+  start: 2011-03-10
+  process: 1
+  project: 
